@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/drink.css">
+		<script src="../js/jquery-1.11.1.min.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<p name="top" id="top"></p>
+			<div class="header">
+				<div class="nav">
+					<span class="logo">sweet</span>
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="drink.html">饮品</a></li>
+						<li><a href="cake.html">蛋糕</a></li>
+						<li><a href="refreshment.html">小食</a></li>
+						<li><a href="recommend.html">热销推荐</a></li>
+						<li><a href="member.html" target="_blank">会员中心</a></li>
+						<li><input type="text" placeholder="抹茶蛋糕"><img src="../images/search.png" alt=""></li>
+					</ul>
+				</div>
+				<div class="banner">
+					<div class="first"><img src="../images/./drink/ba1.png" alt=""></div>
+				</div>
+			</div>
+			<div class="main">
+				<div class="one">
+					<p>夏日畅饮</p>
+					<ul>
+						<li><img src="../images/./drink/120.jpg" alt=""></li>
+						<li><img src="../images/./drink/121.jpg" alt=""></li>
+						<li><img src="../images/./drink/122.jpg" alt=""></li>
+						<li><img src="../images/./drink/123.jpg" alt=""></li>
+						<li><img src="../images/./drink/124.jpg" alt=""></li>
+						<li><img src="../images/./drink/125.jpg" alt=""></li>
+					</ul>
+					<a href="">MORE</a>
+				</div>
+				<div class="two">
+					<p>时尚饮品</p>
+					<ul>
+						<li><img src="../images/./drink/148.jpg" alt=""></li>
+						<li><img src="../images/./drink/143.jpg" alt=""></li>
+						<li><img src="../images/./drink/144.jpg" alt=""></li>
+						<li><img src="../images/./drink/145.jpg" alt=""></li>
+						<li><img src="../images/./drink/146.jpg" alt=""></li>
+						<li><img src="../images/./drink/147.jpg" alt=""></li>
+					</ul>
+					<a href="">MORE</a>
+				</div>
+				<div class="three">
+					<p>冷热糖水系列</p>
+					<ul>
+						<li><img src="../images/./drink/130.jpg" alt=""></li>
+						<li><img src="../images/./drink/131.jpg" alt=""></li>
+						<li><img src="../images/./drink/132.jpg" alt=""></li>
+						<li><img src="../images/./drink/133.jpg" alt=""></li>
+					</ul>
+					<a href="">MORE</a>
+					<img src="../images/dis-2.png" alt="">
+				</div>
+			</div>
+			<div class="footer">
+				<div class="tag">
+					<ul class="tag_left">
+						<li><p>客服热线:4008-500-888(8:00-22:00)</p></li>
+						<li><p>客服邮箱:2895115617@qq.com</p></li>
+					</ul>
+					<ul class="tag_right">
+						<li class="first">发现
+							<ul>
+								<li><a href="">公告</a></li>
+							</ul>
+						</li>
+						<li class="second">关于我们
+							<ul>
+								<li><a href="">企业介绍</a></li>
+								<li><a href="">媒体合作</a></li>
+								<li><a href="">招贤纳士</a></li>
+								<li><a href="">呼叫中心</a></li>
+							</ul>
+						</li>
+						<li class="third">帮助中心
+							<ul>
+								<li><a href="">会员权益</a></li>
+								<li><a href="">购物指南</a></li>
+								<li><a href="">订单相关</a></li>
+								<li><a href="">配送服务</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<a href="#top">回到顶部</a>
+		</div>
+	</body>
+	<script>
+		$(function(){
+			$(window).scroll(function(){
+			var scrollTop=$(window).scrollTop();
+			//console.log(scrollTop)
+			var height=$('.nav').height();
+			console.log(height);
+			
+			if(scrollTop>height){
+				$('.nav').css({position:'fixed',top:'0px'})
+			}else{
+				$('.nav').css({position:'static'})
+			}
+			})
+			
+			$(' .banner .banner_last').click(function(){
+				$('.introduce').slideToggle(2000)
+			})
+		})
+	</script>
+</html>

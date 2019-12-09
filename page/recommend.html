@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/recommend.css">
+		<script src="../js/jquery-1.11.1.min.js"></script>
+		<script src="../js/jquery.mousewheel.min.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<p name="top" id="top"></p>
+			<div class="header">
+				<div class="nav">
+					<span class="logo">sweet</span>
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="drink.html">饮品</a></li>
+						<li><a href="cake.html">蛋糕</a></li>
+						<li><a href="refreshment.html">小食</a></li>
+						<li><a href="recommend.html">热销推荐</a></li>
+						<li><a href="member.html" target="_blank">会员中心</a></li>
+						<li><input type="text" placeholder="抹茶蛋糕"><img src="../images/search.png" alt=""></li>
+					</ul>
+				</div>
+				<div class="imgs">
+					<img src="../images/./recommend/banner22.png" alt="">
+				</div>
+				<div class="bottom">
+					<img src="../images/./recommend/banner21.png" alt="">
+					<p class="first">立即领取</p>
+					<p class="second">立即领取</p>
+					<p class="third">立即领取</p>
+				</div>
+				
+			</div>
+			<div class="main">
+				<div class="one">
+					<div class="one_left"><img src="../images/./recommend/img-1.png" alt=""></div>
+					<div class="one_right">
+						<span class="r_first">蓝莓轻乳拿破仑</span><br>
+						<span class="r_second">淡淡油皮包裹香脆的酥皮，洒上新鲜的蓝莓，是法国经典美味拿破仑的味道</span><br>
+						<a href="">立即购买</a>
+					</div>
+				</div>
+				<div class="two">
+					<div class="two_left">
+						<span class="two_first">鲜莓映雪</span><br>
+						<span class="two_second">鲜红的草莓，雪白的奶油，绵软细腻的口感，集颜值与美味于一身</span>
+						<a href="">立即购买</a>
+					</div>
+					<div class="two_right"><img src="../images/./recommend/img-2.png" alt=""></div>
+				</div>
+				<div class="three">
+					<div class="three_left">
+						<img src="../images/./recommend/img-3.png" alt="">
+					</div>
+					<div class="three_right">
+						<span class="t_first">芒果Mangue</span>
+						<span class="t_second">大片新鲜的芒果搭配松软的白胚，咬一口，夏日所有的燥热都烟消云散</span>
+						<a href="">立即购买</a>
+					</div>
+				</div>
+				<div class="four">
+					<ul>
+						<li><img src="../images/./recommend/13.jpg" alt=""></li>
+						<li><img src="../images/./recommend/16.jpg" alt=""></li>
+						<li><img src="../images/./recommend/17.jpg" alt=""></li>
+						<li><img src="../images/./recommend/18.jpg" alt=""></li>
+						<li><img src="../images/./recommend/13.jpg" alt=""></li>
+						<li><img src="../images/./recommend/16.jpg" alt=""></li>
+						<li><img src="../images/./recommend/17.jpg" alt=""></li>
+					</ul>
+				</div>
+				<div class="five"><img src="../images/dis-1.png" alt=""></div>
+				<div class="six"><img src="../images/dis-2.png" alt=""></div>
+			</div>
+			<div class="footer">
+				<div class="tag">
+					<ul class="tag_left">
+						<li><p>客服热线:4008-500-888(8:00-22:00)</p></li>
+						<li><p>客服邮箱:2895115617@qq.com</p></li>
+					</ul>
+					<ul class="tag_right">
+						<li class="first">发现
+							<ul>
+								<li><a href="">公告</a></li>
+							</ul>
+						</li>
+						<li class="second">关于我们
+							<ul>
+								<li><a href="">企业介绍</a></li>
+								<li><a href="">媒体合作</a></li>
+								<li><a href="">招贤纳士</a></li>
+								<li><a href="">呼叫中心</a></li>
+							</ul>
+						</li>
+						<li class="third">帮助中心
+							<ul>
+								<li><a href="">会员权益</a></li>
+								<li><a href="">购物指南</a></li>
+								<li><a href="">订单相关</a></li>
+								<li><a href="">配送服务</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<a href="#top">回到顶部</a>
+		</div>
+	</body>
+	<script>
+		var index=0;
+		var flag=true;
+		$(function(){
+			$(window).scroll(function(){
+			var scrollTop=$(window).scrollTop();
+			//console.log(scrollTop)
+			var height=$('.nav').height();
+			console.log(height);
+			
+			if(scrollTop>height){
+				$('.nav').css({position:'fixed',top:'0px'})
+			}else{
+				$('.nav').css({position:'static'})
+			}
+			})
+			
+			//轮播图
+			var index=0;
+			var num=0;
+			var timer=setInterval(function(){
+				
+				index++;
+				console.log(index)
+				num++;
+				if(index>4){
+					$('.main .four ul').css('left','0px')
+					console.log($('.main .four ul'))
+					index=1;
+				}
+				if(num>3){
+					num=0;
+				}
+				
+				var obj={left:-400*index+'px'}
+				$('.main .four ul').animate(obj,500).next().children('li').eq(num).addClass('active').siblings().removeClass('active')
+			},2000)
+		})		
+	</script>
+</html>

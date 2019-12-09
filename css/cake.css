@@ -1,0 +1,52 @@
+*{margin:0;padding:0;}
+ul{list-style:none;}
+a{text-decoration:none;}
+div.wrap{width:100%;position:relative;}
+div.wrap>a{position:absolute;right:0px;display:block;color:#767676;}
+div.wrap>.header{width:100%;height:80px;}
+			
+/* 导航栏 */
+div.wrap>.header>.nav{width:100%;height:80px;background:#FFFAFA;z-index:99;}
+div.wrap>.header>.nav>.logo{width:20%;height:80px;font:80px/60px 叶根友行书繁;color:#AD8F69;float:left;text-align:center;}
+div.wrap>.header>.nav>ul{width:80%;height:80px;margin:0 auto;float:right;}
+div.wrap>.header>.nav>ul>li{height:80px;float:left;margin: 0 20px;font:24px/80px 微软雅黑;}
+div.wrap>.header>.nav>ul>li>a{color:#b0916a;}
+div.wrap>.header>.nav>ul>li>input{width:300px;height:50px;position:relative;background:#F2FAF2;border-radius:20px;border:0;}
+div.wrap>.header>.nav>ul>li>img{width:40px;height:40px;position:absolute;top:22px;right:150px;}
+div.wrap>.header>.imgs{width:100%;height:600px;position:relative;}
+div.wrap>.header>.imgs>img{width:100%;height:600px;position:absolute;}
+div.wrap>.header>.imgs>p{font:100px 叶根友行书繁;color:#555;position:absolute;left:210px;bottom:230px;}
+			
+div.wrap>.main{width:100%;height:2948px;background:#FFFAFA;position:relative;}
+div.wrap>.main>.imgs{width:100%;height:730px;overflow:hidden;position:relative;}
+div.wrap>.main>.imgs>ul{width:300%;height:730px;position:absolute;}
+div.wrap>.main>.imgs>ul>li{width:33.3%;height:730px;float:left;}
+div.wrap>.main>.imgs>ul>li>img{width:100%;height:730px;}
+div.wrap>.main>.introduce{width:100%;height:400px;position:ralative;margin:50px auto;}
+div.wrap>.main>.introduce>.introduce_left{width:50%;height:368px;float:left;}
+div.wrap>.main>.introduce>.introduce_left>img{width:70%;height:368px;margin-left:150px;}
+div.wrap>.main>.introduce>.introduce_right{width:50%;height:368px;float:right;}
+div.wrap>.main>.introduce>.introduce_right>span{width:70%;height:368px;display:block;font:24px 微软雅黑;text-indent:2em;}
+div.wrap>.main>.list>h2{width:50%;height:100px;font:80px 微软雅黑;color:#888;margin:15px auto;text-align:center;}
+div.wrap>.main>.list>h3{width:50%;height:80px;font:70px 叶根友行书繁;color:#ccc;margin:15px auto;text-align:center;}
+div.wrap>.main>.list>ul{width:80%;height:1334px;margin:40px auto;background:#fff;}
+div.wrap>.main>.list>ul>li{width:216px;height:291x;margin:20px;float:left;}
+div.wrap>.main>.list>ul>li>img{width:216px;height:216px;margin:10px;}
+div.wrap>.main>.list>ul>li>img:hover{transform:rotateY(360deg);transition:2s;}
+div.wrap>.main>.list>ul>li>a>p{width:216px;height:25px;text-align:center;line-height:25px;}
+div.wrap>.main>.list>ul>li>a{color:#bbb;}
+div.wrap>.main>.list>ul>li>a:hover{color:#424242;}
+div.wrap>.main>.list>a{width:20%;height:60px;margin:0px auto;background:#E3BCFf;display:block;border-radius:25px;font:30px 微软雅黑;color:#fff;text-align:center;line-height:60px;}
+div.wrap>.main>.list>a:hover{background:#add8e6;}
+/* 尾页 */
+div.wrap>.footer{width:100%;height:240px;background:#F2F6F7;}
+div.wrap>.footer>.tag{width:80%;margin:0 auto;padding:40px 0 20px;}
+div.wrap>.footer>.tag>.tag_left{width:49%;height:200px;float:left;border-right:2px solid antiquewhite;}
+div.wrap>.footer>.tag>.tag_left>li>p{font:30px 微软雅黑;margin:10px;color:#767676;}
+div.wrap>.footer>.tag>.tag_right{width:50%;float:right;font:20px 微软雅黑;margin:4px;text-align:center;color:#767676;}
+div.wrap>.footer>.tag>.tag_right>.first{width:33%;float:left;margin:10px 0;font:20px 微软雅黑;color:#767676;}
+div.wrap>.footer>.tag>.tag_right>.first>ul>li>a{margin:10px 0;display:block;font:16px 微软雅黑;color:#767676;}
+div.wrap>.footer>.tag>.tag_right>.second{width:33%;float:right;margin:10px 0;font:20px 微软雅黑;color:#767676;}
+div.wrap>.footer>.tag>.tag_right>.second>ul>li>a{margin:10px 0;display:block;font:16px 微软雅黑;color:#767676;}
+div.wrap>.footer>.tag>.tag_right>.third{width:33%;float:right;margin:10px 0;font:20px 微软雅黑;color:#767676;}
+div.wrap>.footer>.tag>.tag_right>.third>ul>li>a{margin:10px 0;display:block;font:16px 微软雅黑;color:#767676;}

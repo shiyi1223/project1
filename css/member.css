@@ -1,0 +1,50 @@
+*{margin:0;padding:0;}
+ul{list-style:none;}
+a{text-decoration:none;}
+			
+			
+div.wrap>.header>.nav{width:100%;height:80px;background:#FFFAFA;z-index:99;}
+div.wrap>.header>.nav>.logo{width:20%;height:80px;font:80px/60px 叶根友行书繁;color:#AD8F69;float:left;text-align:center;}
+div.wrap>.header>.nav>ul{width:80%;height:80px;margin:0 auto;float:right;}
+div.wrap>.header>.nav>ul>li{height:80px;float:left;margin: 0 20px;font:24px/80px 微软雅黑;}
+div.wrap>.header>.nav>ul>li>a{color:#b0916a;}
+div.wrap>.header>.nav>ul>li>input{width:300px;height:50px;position:relative;background:#F2FAF2;border-radius:20px;border:0;}
+div.wrap>.header>.nav>ul>li>img{width:40px;height:40px;position:absolute;top:22px;right:150px;}
+			
+div.wrap>.main{width:100%;height:634px;overflow:hidden;position:relative;}
+div.wrap>.main>.img{width:100%;height:634px;position:absolute;}
+div.wrap>.main>.img>img{width:100%;height:634px;opacity:0.5;}
+div.wrap>.main>.registed{width:90%;height:500px;background:#fff;position:absolute;left:5%;top:75px;}
+div.wrap>.main>.registed>.aLeft{width:50%;float:left;border-right:2px solid #eee;margin:50px 0px 0px 60px;}
+div.wrap>.main>.registed>.aLeft>ul{width:90%;float:left;}
+div.wrap>.main>.registed>.aLeft>ul>.one{width:100%;height:80px;margin-top:10px;}
+div.wrap>.main>.registed>.aLeft>ul>.one>span{font:60px 幼圆;}			
+div.wrap>.main>.registed>.aLeft>ul>.two{width:100%;height:80px;margin-top:10px;}
+div.wrap>.main>.registed>.aLeft>ul>.two>input{width:100%;height:60px;border:0;border-bottom:2px solid pink;font:30px 苹方;}
+div.wrap>.main>.registed>.aLeft>ul>.three{width:100%;height:80px;margin-top:10px;}
+div.wrap>.main>.registed>.aLeft>ul>.three>input{width:100%;height:60px;border:0;border-bottom:2px solid pink;font:30px 苹方;}
+div.wrap>.main>.registed>.aLeft>ul>.four{width:100%;height:60px;margin-right:10px;font:20px 苹方;float:right;}
+div.wrap>.main>.registed>.aLeft>ul>.four>a{margin-left:451px;line-height:60px;}
+div.wrap>.main>.registed>.aLeft>ul>.five{width:100%;height:60px;background:#B0916A;float:left;margin-top:10px;}
+div.wrap>.main>.registed>.aLeft>ul>.five>a{width:100%;height:60px;font:20px 幼圆;color:#fff;margin-left:245px;line-height:60px;}
+div.wrap>.main>.registed>.aRight{width:40%;float:right;margin:69px 53px 0px 0px;}
+div.wrap>.main>.registed>.aRight>h3{width:100%;height:80px;margin-top:30px;font:16px 幼圆;text-align:center;}
+div.wrap>.main>.registed>.aRight>.logo{width:220px;height:58px;margin:50px auto;}
+div.wrap>.main>.registed>.aRight>.logo>span>a>img{width:58px;height:58px;margin:0 23px;}
+div.wrap>.main>.registed>.aRight>.post{width:100%;height:80px;}
+div.wrap>.main>.registed>.aRight>.post>h4{width:100%;height:30px;font:16px 苹方;color:#ccc;text-align:center;overflow:hidden}
+div.wrap>.main>.registed>.aRight>.post>span{width:40%;height:50px;background:#B0916A;display:block;border-radius:20px;margin:0 auto;}
+div.wrap>.main>.registed>.aRight>.post>span>a{color:#fff;line-height:50px;margin-left:64px;}
+
+/* 尾页 */
+div.wrap>.footer{width:100%;height:240px;background:#F2F6F7;}
+div.wrap>.footer>.tag{width:80%;margin:0 auto;padding:40px 0 20px;}
+div.wrap>.footer>.tag>.tag_left{width:49%;height:200px;float:left;border-right:2px solid antiquewhite;}
+div.wrap>.footer>.tag>.tag_left>li>p{font:30px 微软雅黑;margin:10px;color:#767676;}
+div.wrap>.footer>.tag>.tag_right{width:50%;float:right;font:20px 微软雅黑;margin:4px;text-align:center;color:#767676;}
+div.wrap>.footer>.tag>.tag_right>.first{width:33%;float:left;margin:10px 0;font:20px 微软雅黑;color:#767676;}
+div.wrap>.footer>.tag>.tag_right>.first>ul>li>a{margin:10px 0;display:block;font:16px 微软雅黑;color:#767676;}
+div.wrap>.footer>.tag>.tag_right>.second{width:33%;float:right;margin:10px 0;font:20px 微软雅黑;color:#767676;}
+div.wrap>.footer>.tag>.tag_right>.second>ul>li>a{margin:10px 0;display:block;font:16px 微软雅黑;color:#767676;}
+div.wrap>.footer>.tag>.tag_right>.third{width:33%;float:right;margin:10px 0;font:20px 微软雅黑;color:#767676;}
+div.wrap>.footer>.tag>.tag_right>.third>ul>li>a{margin:10px 0;display:block;font:16px 微软雅黑;color:#767676;}

@@ -1,0 +1,59 @@
+*{margin:0;padding:0;}
+ul{list-style:none;}
+a{text-decoration:none;}
+div.wrap{width:100%;position:relative;}			
+div.wrap>a{display:block;color:#767676;position:absolute;right:0px;}			
+div.wrap>.header{width:100%;}
+			
+/* 导航栏 */
+div.wrap>.header>.nav{width:100%;height:80px;background:#FFFAFA;z-index:99;}
+div.wrap>.header>.nav>.logo{width:20%;height:80px;font:80px/60px 叶根友行书繁;color:#AD8F69;float:left;text-align:center;}
+div.wrap>.header>.nav>ul{width:80%;height:80px;margin:0 auto;float:right;}
+div.wrap>.header>.nav>ul>li{height:80px;float:left;margin: 0 20px;font:24px/80px 微软雅黑;}
+div.wrap>.header>.nav>ul>li>a{color:#b0916a;}
+div.wrap>.header>.nav>ul>li>input{width:300px;height:50px;position:relative;background:#F2FAF2;border-radius:20px;border:0;}
+div.wrap>.header>.nav>ul>li>img{width:45px;height:45px;position:absolute;top:19px;right:150px;}
+div.wrap>.header>.banner{width:100%;height:800px;background:url(../images/./drink/bg_1.jpg) no-repeat center center/100%;position:relative;}
+div.wrap>.header>.banner>.first>img{position:absolute;right:400px;top:100px;}			
+div.wrap>.main{width:100%;}
+div.wrap>.main>.one{width:100%;height:700px;}
+div.wrap>.main>.one>p{width:260px;font:60px 微软雅黑;margin:0 auto;color:#767676;}
+div.wrap>.main>.one>ul{width:1050px;height:500px;margin:0 auto;}
+div.wrap>.main>.one>ul>li{width:300px;height:200px;float:left;margin:25px;}
+div.wrap>.main>.one>ul>li>img{width:300px;height:200px;}
+div.wrap>.main>.one>ul>li>img:hover{transform:rotateY(360deg);transition:1s;}
+div.wrap>.main>.one>a{width:200px;height:60px;margin:0 auto;display:block;line-height:60px;text-align:center;background:#C5975C;border-radius:30px;color:#fff;}
+div.wrap>.main>.one>a:hover{background:#ad8f69;color:#fff;}
+
+			
+div.wrap>.main>.two{width:100%;height:700px;}
+div.wrap>.main>.two>p{width:260px;font:60px 微软雅黑;margin:0 auto;color:#767676;}
+div.wrap>.main>.two>ul{width:1050px;height:500px;margin:0 auto;}
+div.wrap>.main>.two>ul>li{width:300px;height:200px;float:left;margin:25px;}
+div.wrap>.main>.two>ul>li>img{width:300px;height:200px;}
+div.wrap>.main>.two>ul>li>img:hover{transform:rotateY(360deg);transition:1s;}
+div.wrap>.main>.two>a{width:200px;height:60px;margin:0 auto;display:block;line-height:60px;text-align:center;background:#C5975C;border-radius:30px;color:#fff;}
+div.wrap>.main>.two>a:hover{background:#ad8f69;color:#fff;}
+			
+div.wrap>.main>.three{width:100%;height:700px;position:relative;}
+div.wrap>.main>.three>p{width:360px;font:60px 微软雅黑;margin:0 auto;color:#767676;}
+div.wrap>.main>.three>ul{width:1050px;height:500px;margin:0 auto;}
+div.wrap>.main>.three>ul>li{width:300px;height:200px;float:left;margin:25px;}
+div.wrap>.main>.three>ul>li>img{width:300px;height:200px;}
+div.wrap>.main>.three>ul>li>img:hover{transform:rotateY(360deg);transition:1s;}
+div.wrap>.main>.three>a{width:200px;height:60px;margin:0 auto;display:block;line-height:60px;text-align:center;background:#C5975C;border-radius:30px;color:#fff;}
+div.wrap>.main>.three>a:hover{background:#ad8f69;color:#fff;}
+div.wrap>.main>.three>img{width:30%;position:absolute;right:0px;top:240px;}
+
+/* 尾页 */
+div.wrap>.footer{width:100%;height:240px;background:#F2F6F7;}
+div.wrap>.footer>.tag{width:80%;margin:0 auto;padding:40px 0 20px;}
+div.wrap>.footer>.tag>.tag_left{width:49%;height:200px;float:left;border-right:2px solid antiquewhite;}
+div.wrap>.footer>.tag>.tag_left>li>p{font:30px 微软雅黑;margin:10px;color:#767676;}
+div.wrap>.footer>.tag>.tag_right{width:50%;float:right;font:20px 微软雅黑;margin:4px;text-align:center;color:#767676;}
+div.wrap>.footer>.tag>.tag_right>.first{width:33%;float:left;margin:10px 0;font:20px 微软雅黑;color:#767676;}
+div.wrap>.footer>.tag>.tag_right>.first>ul>li>a{margin:10px 0;display:block;font:16px 微软雅黑;color:#767676;}
+div.wrap>.footer>.tag>.tag_right>.second{width:33%;float:right;margin:10px 0;font:20px 微软雅黑;color:#767676;}
+div.wrap>.footer>.tag>.tag_right>.second>ul>li>a{margin:10px 0;display:block;font:16px 微软雅黑;color:#767676;}
+div.wrap>.footer>.tag>.tag_right>.third{width:33%;float:right;margin:10px 0;font:20px 微软雅黑;color:#767676;}
+div.wrap>.footer>.tag>.tag_right>.third>ul>li>a{margin:10px 0;display:block;font:16px 微软雅黑;color:#767676;}

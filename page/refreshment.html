@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/refreshment.css">
+		<script src="../js/jquery-1.11.1.min.js"></script>
+		<script src="../js/jquery.mousewheel.min.js"></script>
+	</head>
+	<body>
+		<div class="nav">
+			<span class="logo">sweet</span>
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="drink.html">饮品</a></li>
+				<li><a href="cake.html">蛋糕</a></li>
+				<li><a href="refreshment.html">小食</a></li>
+				<li><a href="recommend.html">热销推荐</a></li>
+				<li><a href="member.html" target="_blank">会员中心</a></li>
+				<li><input type="text" placeholder="抹茶蛋糕"><img src="../images/search.png" alt=""></li>
+			</ul>
+		</div>
+		<div class="wrap">
+			<div class="main">
+				<div class="main_left"><img src="../images/./refreshment/101.png" alt=""></div>
+				<div class="main_right"><img src="../images/./refreshment/102.png" alt=""></div>
+				<div class="one">
+					<ul class="imgs">
+						<li><img src="../images/./refreshment/banner27.jpg" alt=""></li>
+						<li><img src="../images/./refreshment/banner28.jpg" alt=""></li>
+						<li><img src="../images/./refreshment/banner29.jpg" alt=""></li>
+						<li><img src="../images/./refreshment/banner31.jpg" alt=""></li>
+						<li><img src="../images/./refreshment/banner27.jpg" alt=""></li>
+					</ul>
+					<ul class="num">
+						<li class="active"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="two">
+					<div class="two_left"><img src="../images/./refreshment/93.jpg" alt=""></div>
+					<div class="two_right">
+						<h2>包裹馥郁香气，美味奶香融合蔓越莓的酸甜，口感生活，品质提升。</h2>
+						<h3>Wrapped with aromas, delicious milky blends with the sweet and sour of cranberry, taste and life.</h3>
+						<a href="">立即购买</a>
+						<img src="../images/./refreshment/9.png" alt="">
+					</div>
+				</div>
+				<div class="three">
+					<div class="three_left">
+						<h2>赋予法国芝士更加轻盈的形态，绵软的口感搭配醇正的奶香，入口的一刹那，仿佛徜徉在云间。</h2>
+						<h3>Gives the French cheese a lighter form, with a soft mouthfeel and a mellow milky aroma. The moment of the entrance, it seems to be in the clouds.</h3>
+						<a href="">立即购买</a>
+						<img src="../images/dis-1.png" alt="">
+					</div>
+					<div class="three_right"><img src="../images/./refreshment/94.jpg" alt=""></div>
+				</div>
+				<div class="four">
+					<div class="four_left"><img src="../images/./refreshment/95.jpg" alt=""></div>
+					<div class="four_right">
+						<h2>抹茶搭配法国黄油的跨国之恋，带来全新的味蕾体验。点心的秘密在于指尖的温度传递不一样的惊喜，成就更多的舌尖奇迹。</h2>
+						<h3>Matcha and French butter's transnational love brings a new taste bud experience. The secret of the dim sum is that the temperature at the fingertips is not the same as the surprise, and more miracles of the tongue are achieved.</h3>
+						<a href="">立即购买</a>
+						<img src="../images/dis-2.png" alt="">
+					</div>
+				</div>
+				<div class="five">
+					<div class="five_imgs">
+						<ul>
+							<li><img src="../images/./refreshment/86.jpg" alt=""></li>
+							<li><img src="../images/./refreshment/81.jpg" alt=""></li>
+							<li><img src="../images/./refreshment/78.jpg" alt=""></li>
+							<li><img src="../images/./refreshment/79.jpg" alt=""></li>
+							<li><img src="../images/./refreshment/86.jpg" alt=""></li>
+							<li><img src="../images/./refreshment/81.jpg" alt=""></li>
+							<li><img src="../images/./refreshment/78.jpg" alt=""></li>
+						</ul>
+					</div>
+					<ul class="five_left">
+						<li><p>客服热线:4008-500-888(8:00-22:00)</p></li>
+						<li><p>客服邮箱:2895115617@qq.com</p></li>
+					</ul>
+					<ul class="five_right">
+						<li class="first">发现
+							<ul>
+								<li><a href="">公告</a></li>
+							</ul>
+						</li>
+						<li class="second">关于我们
+							<ul>
+								<li><a href="">企业介绍</a></li>
+								<li><a href="">媒体合作</a></li>
+								<li><a href="">招贤纳士</a></li>
+								<li><a href="">呼叫中心</a></li>
+							</ul>
+						</li>
+						<li class="third">帮助中心
+							<ul>
+								<li><a href="">会员权益</a></li>
+								<li><a href="">购物指南</a></li>
+								<li><a href="">订单相关</a></li>
+								<li><a href="">配送服务</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		var index=0;
+		var flag=true;
+		var clientHeight=$(window).height()-80;
+		
+		$(function(){
+			$(window).scroll(function(){
+			var scrollTop=$(window).scrollTop();
+			//console.log(scrollTop)
+			var height=$('.nav').height();
+			// console.log(height);
+			
+			if(scrollTop>height){
+				$('.nav').css({position:'fixed',top:'0px'})
+			}else{
+				$('.nav').css({position:'static'})
+			}
+			})
+			
+			//给每一个模块一个可变的高度
+			
+			$('.wrap').css('height',clientHeight)
+			$('.one').css('height',clientHeight)
+			$('.two').css('height',clientHeight)
+			$('.three').css('height',clientHeight)
+			$('.four').css('height',clientHeight)
+			$('.five').css('height',clientHeight)
+			// console.log($('.main').children())
+			// console.log($(window).height())
+			var x=$(window).height()-80;
+			$(window).mousewheel(function(e){
+				var ev = e || window.event
+				if(flag==true){
+					flag=false;
+					if(e.deltaY>0){
+						index--;
+							
+						if(index<0){
+							index=0;
+							
+						}
+						var aTop = index * -x + 'px';
+						// console.log(aTop)
+					    $('.main').animate({top:aTop},1000,function(){ flag=true;})
+						console.log(index)
+					
+					}else{
+						
+						index++;
+						console.log(index)
+						if(index>4){
+							index=4;
+						}
+						var aTop = index*-x + 'px';
+					    $('.main').animate({top:aTop},1000,function(){ flag=true;})
+						
+						$('.two_left').animate({left:'0',opacity:'1'},1000)
+						$('.two_right').animate({right:'0',opacity:'1'},1000)
+						if(index==2){
+							$('.three_left').animate({left:'0',opacity:'1'},1000)
+							$('.three_right').animate({right:'0',opacity:'1'},1000)
+						}else if(index==3){
+							$('.four_left').animate({left:'0',opacity:'1'},1000)
+							$('.four_right').animate({right:'0',opacity:'1'},1000)
+						}else if(index==4){
+							$('.five_left').animate({left:'0',opacity:'1'},1000)
+							$('.five_right').animate({right:'0',opacity:'1'},1000)
+						}	
+					}
+				}	
+			})
+			
+			// 大轮播图
+			var i=0;
+			num=0;
+			function run(){
+				i++;
+				num++;
+				if(i>4){
+					$('div.wrap .main .one ul.imgs').css('left','0px')
+					i=1;
+				}
+				if(num>3){
+					num=0;
+				}
+				
+				var obj={left:-1200*i+'px'}
+				$('div.wrap .main .one ul.imgs').animate(obj,500).next().children('li').eq(num).addClass('active').siblings().removeClass('active')
+			}
+			timer1=setInterval(run,2000)
+			
+			// 小轮播图
+			var a=0;
+			var timer=setInterval(function(){
+				
+				a++;
+				if(a>4){
+					$('.five_imgs ul').css('left','0px')
+					a=1;
+				}
+				var obj={left:-300*a+'px'}
+				$('.five_imgs ul').animate(obj,500)
+			},2000)
+			
+			$('.num li').mouseover(function(){
+				clearInterval(timer1);
+				y=$(this).index();
+				console.log($(this).index())
+				var obj={left:(-1200*y+'px')}
+				$('div.wrap .main .one ul.imgs').animate(obj,500)
+				$('.num li').eq(y).addClass('active').siblings().removeClass('active')
+			})
+			$('.num li').mouseout(function(){
+				timer1=setInterval(run,2000)
+			})
+		})
+	</script>
+</html>

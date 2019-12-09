@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/index.css">
+		<script src="../js/jquery-1.11.1.min.js"></script>
+		<script src="../js/jquery.mousewheel.min.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="nav">
+				<span class="logo">sweet</span>
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="drink.html">饮品</a></li>
+					<li><a href="cake.html">蛋糕</a></li>
+					<li><a href="refreshment.html">小食</a></li>
+					<li><a href="recommend.html">热销推荐</a></li>
+					<li><a href="member.html" target="_blank">会员中心</a></li>
+					<li><input type="text" placeholder="抹茶蛋糕"><img src="../images/search.png" alt=""></li>
+				</ul>
+			</div>
+		</div>
+		<div class="wrap">
+			<div class="main">
+				<div class="one" >
+					<ul class="imgs">
+						<li><img src="../images/./index/banner36.jpg" alt=""></li>
+						<li><img src="../images/./index/banner37.jpg" alt=""></li>
+						<li><img src="../images/./index/banner38.jpg" alt=""></li>
+						<li><img src="../images/./index/banner36.jpg" alt=""></li>
+					</ul>
+					<ul class="num">
+						<li class="active"></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<ul class="btn">
+						<li class="prev"></li>
+						<li class="next"></li>
+					</ul>
+					<div class="ban">
+						<ul>
+							<li><a href="#two"><img src="../images/./index/img2.jpg" alt=""></a></li>
+							<li><a href="#three"><img src="../images/./index/img3.jpg" alt=""></a></li>
+							<li><a href="#four"><img src="../images/./index/img1.jpg" alt=""></a></li>
+							<li><a href="#five"><img src="../images/./index/img4.png" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="two" name="two" id="two">
+					<p>生日<span>/专区</span></p>
+					<img src="../images/./index/banner41.jpg" alt="">
+					<ul>
+						<li><img src="../images/./index/33.jpg" alt=""></li>
+						<li><img src="../images/./index/35.jpg" alt=""></li>
+						<li><img src="../images/./index/36.jpg" alt=""></li>
+						<li><img src="../images/./index/37.jpg" alt=""></li>
+					</ul>
+				</div>
+				<div class="three" name="three" id="three">
+					<p>聚会<span>/专区</span></p>
+					<img src="../images/./index/banner42.jpg" alt="">
+					<ul>
+						<li><img src="../images/./index/124.jpg" alt=""></li>
+						<li><img src="../images/./index/122.jpg" alt=""></li>
+						<li><img src="../images/./index/143.jpg" alt=""></li>
+					</ul>
+				</div>
+				<div class="four" name="four" id="four">
+					<p>新品<span>/专区</span></p>
+					<img src="../images/./index/banner40.jpg" alt="">
+					<ul>
+						<li><img src="../images/./index/17.jpg" alt=""></li>
+						<li><img src="../images/./index/18.jpg" alt=""></li>
+						<li><img src="../images/./index/19.jpg" alt=""></li>
+					</ul>
+				</div>
+				<div class="five" name="five" id="five">
+					<p>活动<span>/专区</span></p>
+					<a href=""><img src="../images/./index/banner13.jpg" alt=""></a>
+				</div>
+				<div class="six">
+					<div class="tag">
+						<ul class="tag_left">
+							<li><p>客服热线:4008-500-888(8:00-22:00)</p></li>
+							<li><p>客服邮箱:2895115617@qq.com</p></li>
+						</ul>
+						<ul class="tag_right">
+							<li class="first">发现
+								<ul>
+									<li><a href="">公告</a></li>
+								</ul>
+							</li>
+							<li class="second">关于我们
+								<ul>
+									<li><a href="">企业介绍</a></li>
+									<li><a href="">媒体合作</a></li>
+									<li><a href="">招贤纳士</a></li>
+									<li><a href="">呼叫中心</a></li>
+								</ul>
+							</li>
+							<li class="third">帮助中心
+								<ul>
+									<li><a href="">会员权益</a></li>
+									<li><a href="">购物指南</a></li>
+									<li><a href="">订单相关</a></li>
+									<li><a href="">配送服务</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<img src="../images/9.png" alt="">
+				</div>	
+			</div>
+		</div>	
+	</body>
+		<script>
+			var index=0;
+			flag=true;
+			var clientHeight=$(window).height()-80;
+			var clientWidth=window.screen.availWidth;
+			console.log(window.screen.availWidth)
+			
+			$(function(){
+				//吸顶导航
+				$(window).scroll(function(){
+					var scrollTop=$(window).scrollTop();
+					//console.log(scrollTop)
+					var height=$('.nav').height();
+					console.log(height);
+					
+					if(scrollTop>height){
+						$('.nav').css({position:'fixed',top:'0px'})
+					}else{
+						$('.nav').css({position:'static'})
+					}
+				})
+				
+				
+				// 无滚动条滑动
+				//给每一个模块一个可变的高度
+				$('.wrap').css('height',clientHeight)
+				$('.one').css('height',clientHeight)
+				$('.two').css('height',clientHeight)
+				$('.three').css('height',clientHeight)
+				$('.three').css('height',clientHeight)
+				$('.four').css('height',clientHeight)
+				$('.six').css('height',clientHeight)
+				console.log($('.main').children())
+				console.log($(window).height())
+				var x=$(window).height()-70;
+				$(window).mousewheel(function(e){
+					if(flag==true){
+						flag=false;
+						if(e.deltaY>0){
+							index--;
+								
+							if(index<0){
+								index=0;
+								
+							}
+							var aTop = index * -x + 'px';
+							console.log(aTop)
+						    $('.main').animate({top:aTop},1000,function(){ flag=true;})
+						
+						}else{
+							index++;
+							if(index>5){
+								index=5;
+							}
+							var aTop = index*-x + 'px';
+							console.log(aTop)
+						    $('.main').animate({top:aTop},1000,function(){ flag=true;})
+						}
+					}	
+				})
+			
+				var i=0;
+				num=0;
+				function run(){
+					i++;
+					num++;
+					if(i>3){
+						$('div.wrap .main .one .imgs').css('left','0px')
+						i =1;
+					}
+					if(num>2){
+						num=0;
+					}
+					
+					var obj={left:-clientWidth*i+'px'}
+					$('div.wrap .main .one .imgs').animate(obj,500).next().children('li').eq(num).addClass('active').siblings().removeClass('active')
+				}
+				var timer=setInterval(run,2000)
+				
+				$('.num li').mouseover(function(){
+					clearInterval(timer);
+					x=$(this).index();
+					console.log($(this).index())
+					var obj={left:(-clientWidth*x+'px')}
+					$('div.wrap .main .one .imgs').animate(obj,500)
+					$('.num li').eq(x).addClass('active').siblings().removeClass('active')
+				})
+				$('.num li').mouseout(function(){
+					timer=setInterval(run,2000)
+				})
+			})
+	</script>
+	
+</html>
